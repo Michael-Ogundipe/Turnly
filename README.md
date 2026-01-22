@@ -64,3 +64,18 @@ lib/
   main.dart
 
 ```
+## Critical Requirements
+
+## Testing
+
+- Include unit tests for queue logic (position updates, service completion)
+- Include widget tests for main screens
+- Test async behavior for notifications
+
+## TRADEOFFS.md
+
+Create a concise document (<500 words) explaining:
+- **Architecture choices:** Why Riverpod and clean architecture were chosen
+- **Concurrency strategy:** Sequential vs batch vs full async handling for queue updates
+- **Error handling approach:** Retry, fail fast, or log & continue
+- **Performance vs safety trade-offs:** What was prioritized and why
