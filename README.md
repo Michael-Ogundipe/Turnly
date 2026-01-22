@@ -18,3 +18,49 @@ A fully functional Flutter app with:
 - Notifications
 - Reusable widgets and clean architecture
 - Automated tests
+
+## Requirements
+
+- Flutter 
+- Firebase (Auth + Firestore + Cloud Messaging) 
+- Riverpod for state management
+- Proper folder structure with separation of concerns
+- Edge case handling and loading states
+
+## Implementation
+
+- Role-based screens: Customer vs Business Admin
+- Real-time queue updates via Firestore Realtime / Supabase Realtime
+- Notifications when a customer is next
+- Queue management: create session, add walk-ins, call next, mark served
+- Edge case handling (cancellations, skipped entries, network errors)
+
+## Repository Structure
+
+```dart
+
+lib/
+  core/
+    constants/
+    utils/
+    errors/
+    theme/
+  features/
+    auth/
+      data/
+      domain/
+      presentation/
+    business/
+      data/
+      domain/
+      presentation/
+    queue/
+      data/
+      domain/
+      presentation/
+  shared/
+    widgets/
+    models/
+  main.dart
+
+```
